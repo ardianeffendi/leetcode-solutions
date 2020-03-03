@@ -1,0 +1,28 @@
+""" Given a binary tree, return the preorder traversal of its nodes' values. """
+
+# Iterative approach
+
+class Solution(object):
+    def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        
+        current = root
+        right = current
+        stack = []
+        output = []
+        
+        while True:
+            if current != None:
+                stack.append(current)
+                output.append(current.val)
+                current = current.left
+            elif(stack):
+                current = stack.pop()
+                current = current.right
+            else:
+                break
+                
+        return output
