@@ -1,2 +1,2 @@
 # leetcode-solutions
-Providing solutions of the LeetCode's problems that I have done.
+Providing solutions to the LeetCode's problems that I have done.
